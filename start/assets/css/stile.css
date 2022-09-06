@@ -23,6 +23,8 @@ header {
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
     position: fixed;
+    width: -webkit-fill-available;
+    margin-right: 2em;
 }
 header div img {
     margin-bottom: 20px;
@@ -203,33 +205,36 @@ footer a {
     position: fixed;
     bottom: 1px;
     right: -6px;
+    font-size: 2.8em;
 }
 
-.instagram {
+.cal {
     position: fixed;
-    bottom: 50px;
-    right: -6px;
+    bottom: 3em;
+    right: -7px;
+    font-size: 2.8em;
 }
 
-.calendar {
+.insta {
     position: fixed;
-    bottom: 100px;
-    right: -6px;
+    bottom: 4.5em;
+    right: -7px;
+    font-size: 2.8em;
 }
 
 .torna_su a {
-    color: rgb(246, 134, 180);
+    color: rgb(249, 92, 157);
 }
 
-.instagram a, .calendar a {
-   color: #00A0C6;
+.insta a, .cal a {
+   color: #0063c6;
 }
 
 
-.torna_su, .instagram, .calendar {
+.torna_su .far, .insta .far, .cal .fas {
     background-color: white;
-    font-size: 2.8em;
 }
+
 
 @media screen and (min-width: 320px) {
     header p {
@@ -249,6 +254,168 @@ footer a {
     }
     h1, strong, caption, a, section h2 , aside h2 {
         font-weight: 500;
+    }
+
+}
+
+@media screen and (min-width: 425px) {
+
+    header nav li a::before {
+        top: 0.1em;
+    }
+    header {
+        font-size: 17px;
+    }
+    main {
+        font-weight: 400;
+        margin-top: 18em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .logo_5 {
+        width: 6em;
+        padding: 2px;
+    }
+
+    header nav li a::before {
+        font-size: 34px;
+        left: 1.5%;
+    }
+    header {
+        font-size: 1.5em;
+        margin-right: 28px;
+    }
+
+    header img {
+        height: 3em;
+    }
+    main {
+        font-size: large;
+        margin-top: 16em;
+    }
+
+    h1, strong, caption, a, section h2 , aside h2 {
+        font-weight: 600;
+    }
+
+    section h2 {
+        font-size: 3rem;
+    }
+
+    button, input {
+        font-size: x-large
+    }
+
+    footer {
+        font-size: 3em;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+
+    .logo_5 {
+        border: 8px solid rgb(0, 132, 184);
+        outline: 8px solid purple;
+        margin-right: 4%;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    header nav li a::before {
+        font-size: 2em;
+        left: 1.5%;
+    }
+    header {
+        font-size: 2em;
+        margin-right: 28px;
+    }
+
+    header img {
+        height: 4em;
+    }
+    main {
+        font-size: x-large;
+        margin-top: 12.5em;
+    }
+
+    strong, caption, a, section h2 , aside h2 {
+        font-weight: 700;
+    }
+
+    table {
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    iframe {
+        width: 25em;
+        height: 13em;
+        display: flex;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    aside {
+        text-align: center;
+    }
+
+    aside div {
+        width: 30%;
+        height: 20%;
+        display: inline-block;
+        margin-inline: auto;
+        text-align: left;
+    }
+
+    footer {
+        font-size: x-large;
+    }
+
+    .insta, .cal, .torna_su {
+        font-size: 4em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .logo_5 {
+        border: 9px solid rgb(0, 132, 184);
+        outline: 9px solid purple;
+        margin-right: 3%;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    header nav li a::before {
+        font-size: 2em;
+        bottom: 4%;
+        left: 1.5%;
+    }
+
+    header {
+        font-size: 2.8em;
+        margin-right: 28px;
+    }
+
+    main {
+        font-size: xx-large;
+        margin-top: 12.5em;
+    }
+    
+    aside h2 {
+        font-size: 1em;
+    }
+
+    button, input {
+        font-size: xx-large
+    }
+
+    .insta, .cal, .torna_su {
+        font-size: 5em;
     }
 
 }
